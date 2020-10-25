@@ -8,5 +8,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'ryanoasis/vim-devicons'
+" Make sure to grab nerd font, before using devicons
+"Plug 'ryanoasis/vim-devicons'
 call plug#end()
