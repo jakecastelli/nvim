@@ -3,7 +3,7 @@ colorscheme gruvbox
 set bg=dark
 
 " Encoding
-set encoding=utf-8
+set encoding=UTF-8
 
 "basic
 set nu

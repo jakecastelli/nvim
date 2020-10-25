@@ -7,6 +7,7 @@ tags
 tmp/*
 
 plugged/
+spell/
 backup/
 *.log
 .DS_Store
