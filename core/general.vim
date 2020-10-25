@@ -31,3 +31,19 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " === vim-better-whitespace === "
 "   <leader>y - Automatically remove trailing whitespace
 nmap <leader>y :StripWhitespace<CR>
+
+" Random colourscheme selection
+function! RandomScheme()
+  let choices = ['gruvbox', 'onehalfdark' ]
+  let index = RandomNumber(len(choices))
+  execute 'colorscheme' choices[index]
+endfunction
+
+
+function! RandomNumber(limit)
+  let components = split(reltimestr(reltime()), '\.')
+  let microseconds = components[-1] + 0
+  return microseconds % a:limit
+endfunction
+
+call RandomScheme()
