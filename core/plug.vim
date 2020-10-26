@@ -5,6 +5,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Color Scheme
 Plug 'morhetz/gruvbox'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'cocopon/iceberg.vim'
 "
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'

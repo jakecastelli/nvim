@@ -1,6 +1,6 @@
 let g:mapleader=","
-colorscheme gruvbox
 set bg=dark
+set hidden
 
 " Encoding
 set encoding=UTF-8
@@ -34,11 +34,10 @@ nmap <leader>y :StripWhitespace<CR>
 
 " Random colourscheme selection
 function! RandomScheme()
-  let choices = ['gruvbox', 'onehalfdark' ]
+  let choices = ['gruvbox', 'onehalfdark', 'iceberg' ]
   let index = RandomNumber(len(choices))
   execute 'colorscheme' choices[index]
 endfunction
-
 
 function! RandomNumber(limit)
   let components = split(reltimestr(reltime()), '\.')
