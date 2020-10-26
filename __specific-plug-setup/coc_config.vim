@@ -7,6 +7,7 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> <leader>dj <Plug>(coc-implementation)
 nnoremap <silent> <leader>ds :<C-u>CocList -I -N --top symbols<CR>
+" Enable and Disable the Coc
 nnoremap <silent> <leader>e :CocEnable<CR>
 nnoremap <silent> <leader>ee :CocDisable<CR>
 
