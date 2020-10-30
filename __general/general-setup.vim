@@ -1,5 +1,5 @@
 set bg=dark
-set updatetime=300
+set updatetime=50
 
 " Encoding
 set encoding=UTF-8
@@ -19,6 +19,7 @@ set noshiftround
 " Cursor motion
 set scrolloff=8
 set matchpairs+=<:> " use % to jump between pairs
+set cursorline
 "set backspace=indent,eol,start
 
 " Enable spellcheck for markdown files
@@ -29,7 +30,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Random colourscheme selection everytime open vim
 function! RandomScheme()
-  let choices = ['gruvbox', 'onehalfdark', 'iceberg' ]
+  let choices = ['gruvbox', 'onehalfdark', 'iceberg']
   let index = RandomNumber(len(choices))
   execute 'colorscheme' choices[index]
 endfunction
