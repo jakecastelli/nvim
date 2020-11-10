@@ -7,14 +7,9 @@
     "typescriptreact",
     "json",
     "javascriptreact",
-    "typescript.tsx"
-  ],
-  "eslint.filetypes": [
-    "javascript",
-    "typescript",
-    "typescriptreact",
-    "javascriptreact",
-    "typescript.tsx"
+    "typescript.tsx",
+    "html",
+    "css"
   ],
   "diagnostic.errorSign": "!",
   "diagnostic.warningSign": "•",
