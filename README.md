@@ -25,5 +25,5 @@ This is my NeoVim setup, it also works with Vim (maybe not 100% competeble, but 
 
 <hr>
 
-``` It does not matter if you are a beginner or not, everyone needs to start from somewhere ``` <br>
-``` If you have any question in terms of my setup, leave a comment or create an issue, I will try my best to explain it. ```
+> It does not matter if you are a beginner or not, everyone needs to start from somewhere <br>
+> If you have any question in terms of my setup, leave a comment or create an issue, I will try my best to explain it. 
