@@ -21,7 +21,7 @@ This is my NeoVim setup, it also works with Vim (maybe not 100% competeble, but 
 
 ## For NeoVim:
 1. Clone the repo under your `~/.config/` folder 
-2. open vim and then type `:PlugInstall`
+2. open neovim and then type `:PlugInstall`
 
 <hr>
 
