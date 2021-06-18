@@ -25,8 +25,6 @@ noremap <leader>n :tabn<CR>
 " Previous Tab
 noremap <leader>p :tabp<CR>
 " Close current Tab
-noremap <leader>c :tabc<CR>
+" noremap <leader>c :tabc<CR>
 " Open Terminal on the right split and put cursor into terminal
-noremap <leader>tm :vs<CR> <bar> <C-w>l <bar> :term<CR> <bar> a
-" Save
-noremap <leader>w :w<CR>
+" noremap <leader>tm :vs<CR> <bar> <C-w>l <bar> :term<CR> <bar> a

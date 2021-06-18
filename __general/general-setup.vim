@@ -23,6 +23,8 @@ set cursorline
 
 set ssop-=curdir
 "set backspace=indent,eol,start
+"enable 24bit true colour
+set termguicolors
 
 " Enable spellcheck for markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell
@@ -32,7 +34,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Random colourscheme selection everytime open vim
 function! RandomScheme()
-  let choices = ['gruvbox', 'onehalfdark', 'iceberg']
+  let choices = ['gruvbox', 'onehalfdark', 'iceberg', 'cobalt2']
   let index = RandomNumber(len(choices))
   execute 'colorscheme' choices[index]
 endfunction
