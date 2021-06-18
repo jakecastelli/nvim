@@ -9,7 +9,8 @@
     "javascriptreact",
     "typescript.tsx",
     "html",
-    "css"
+    "css",
+    "markdown"
   ],
   "diagnostic.errorSign": "!",
   "diagnostic.warningSign": "•",

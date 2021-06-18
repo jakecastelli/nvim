@@ -11,7 +11,10 @@ Plug 'cocopon/iceberg.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
+" Fizzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'ntpeters/vim-better-whitespace'
@@ -21,4 +24,14 @@ Plug 'tpope/vim-commentary'
 Plug 'mattn/emmet-vim'
 " Make sure to grab nerd font, before using devicons
 " Plug 'ryanoasis/vim-devicons'
+" floating terminal
+Plug 'voldikss/vim-floaterm'
+" Multi-cursor
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+" React JSX TSX
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+" Styled Component
+Plug 'styled-components/vim-styled-components', { 'branch': 'main'  }
 call plug#end()

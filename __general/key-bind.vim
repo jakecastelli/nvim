@@ -7,7 +7,6 @@ nmap <leader>l <C-w>l
 nmap <leader>j <C-w>j
 nmap <leader>k <C-w>k
 " show all the buffers
-nmap <leader><space> :buffers<CR>
 nnoremap <leader>= :resize +5<CR>
 nnoremap <leader>- :resize -5<CR>
 nnoremap <leader>. :vertical resize +5<CR>
@@ -20,7 +19,7 @@ nnoremap <leader>s :sp<CR>
 nnoremap <leader>vs :vs<CR>
 
 " New Tab
-nmap <leader>tt :tabnew<CR>
+nmap <leader>tt :tabnew<Space>
 " Next Tab
 noremap <leader>n :tabn<CR>
 " Previous Tab

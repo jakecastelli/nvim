@@ -20,6 +20,8 @@ set noshiftround
 set scrolloff=8
 set matchpairs+=<:> " use % to jump between pairs
 set cursorline
+
+set ssop-=curdir
 "set backspace=indent,eol,start
 
 " Enable spellcheck for markdown files

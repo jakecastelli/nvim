@@ -1,3 +1,4 @@
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " === coc.nvim === "
 "   <leader>dd    - Jump to definition of current symbol
 "   <leader>dr    - Jump to references of current symbol
