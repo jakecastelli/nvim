@@ -56,3 +56,6 @@ function! RandomNumber(limit)
 endfunction
 
 call RandomScheme()
+
+" set background transparent
+command! Transparent execute 'hi Normal guibg=NONE ctermbg=NONE'
