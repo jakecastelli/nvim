@@ -36,6 +36,11 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Open vimrc Config
+command! Config execute ":e $MYVIMRC"
+" Reload vimrc
+command! Reload execute "source ~/.config/nvim/init.vim"
+
 " Random colourscheme selection everytime open vim
 function! RandomScheme()
   let choices = ['gruvbox', 'onehalfdark', 'iceberg', 'cobalt2']

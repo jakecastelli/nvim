@@ -12,7 +12,7 @@ nnoremap <leader>- :resize -5<CR>
 nnoremap <leader>. :vertical resize +5<CR>
 nnoremap <leader>, :vertical resize -5<CR>
 " close the current window
-nnoremap <leader>q :q<CR>
+nnoremap <leader>Q :q<CR>
 " split screen
 nnoremap <leader>s :sp<CR>
 " vertical split screen
