@@ -12,7 +12,7 @@
     "css",
     "markdown"
   ],
-  "diagnostic.errorSign": "!",
-  "diagnostic.warningSign": "•",
+  "diagnostic.errorSign": "E",
+  "diagnostic.warningSign": "!",
   "diagnostic.infoSign": "•"
 }
