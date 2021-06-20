@@ -36,8 +36,9 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Open vimrc Config
-command! Config execute ":e $MYVIMRC"
+" Open vimrc Config in a new tab and change the dir path
+" of that buffer to ~/.config/nvim
+command! Config execute "tabnew | lcd ~/.config/nvim | e $MYVIMRC"
 " Reload vimrc
 command! Reload execute "source ~/.config/nvim/init.vim"
 
