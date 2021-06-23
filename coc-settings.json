@@ -14,5 +14,12 @@
   ],
   "diagnostic.errorSign": "E",
   "diagnostic.warningSign": "!",
-  "diagnostic.infoSign": "•"
+  "diagnostic.infoSign": "•",
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html"
+  ]
 }

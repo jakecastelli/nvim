@@ -20,6 +20,8 @@ set softtabstop=2
 set expandtab
 set noshiftround
 
+set hidden
+
 " Cursor motion
 set scrolloff=8
 set matchpairs+=<:> " use % to jump between pairs

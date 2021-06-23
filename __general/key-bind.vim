@@ -1,6 +1,7 @@
 " === vim-better-whitespace === "
 "   <leader>y - Automatically remove trailing whitespace
 nmap <leader>y :StripWhitespace<CR>
+
 " <leader> hljk For navigating between windows
 nmap <leader>h <C-w>h
 nmap <leader>l <C-w>l
@@ -31,3 +32,6 @@ noremap <leader>p :tabp<CR>
 noremap <leader>w :w<CR>
 " Open Terminal on the right split and put cursor into terminal
 " noremap <leader>tm :vs<CR> <bar> <C-w>l <bar> :term<CR> <bar> a
+"
+" Escape to normal mode from insert mode
+imap jj <Esc>
