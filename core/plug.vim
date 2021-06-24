@@ -37,4 +37,6 @@ Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
 " Styled Component
 Plug 'styled-components/vim-styled-components', { 'branch': 'main'  }
+" Css Colour preview
+Plug 'ap/vim-css-color'
 call plug#end()
