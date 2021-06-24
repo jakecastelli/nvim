@@ -1,14 +1,14 @@
 set bg=dark
 set updatetime=50
 
-" This can solve flicker issue - TODO: check if NVIM v0.5+ fixed it
+" This can solve flicker issue which terminal opening in nvim - TODO: check if NVIM v0.5+ fixed it
 au TermEnter * setlocal scrolloff=0
 au TermLeave * setlocal scrolloff=10
 
 " Encoding
 set encoding=UTF-8
 
-"basic
+" show line number and relative line number
 set nu
 set rnu
 
@@ -41,6 +41,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Open vimrc Config in a new tab and change the dir path
 " of that buffer to ~/.config/nvim
 command! Config execute "tabnew | lcd ~/.config/nvim | e $MYVIMRC"
+
 " Reload vimrc
 command! Reload execute "source ~/.config/nvim/init.vim"
 
