@@ -1,8 +1,7 @@
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " === coc.nvim === "
 "   <leader>dd    - Jump to definition of current symbol
-"   <leader>dr    - Jump to references of current symbol
-"   <leader>dj    - Jump to implementation of current symbol
+"   <leader>dr    - Jump to references of current symbol <leader>dj    - Jump to implementation of current symbol
 "   <leader>ds    - Fuzzy search current project symbols
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gr <Plug>(coc-references)
@@ -62,3 +61,10 @@ if has('nvim')
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
+
+" augo suggestion
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" jumping to pre/next error
+nmap <silent> <Leader>en <Plug>(coc-diagnostic-next-error)
+nmap <silent> <Leader>ep <Plug>(coc-diagnostic-prev-error)
