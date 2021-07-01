@@ -37,8 +37,15 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 
 " Enable auto mkview and load view for fold
 " reference: https://www.youtube.com/watch?v=pnc9_d1k5-4&list=PLy7Kah3WzqrEjsuvhT46fr28Q11oa5ZoI&index=26&ab_channel=TheFrugalComputerGuy
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview
+augroup AutoSaveGroup
+  autocmd!
+  " view files are about 500 bytes
+  " bufleave but not bufwinleave captures closing 2nd tab
+  " nested is needed by bufwrite* (if triggered via other autocmd)
+  " BufHidden for for compatibility with `set hidden`
+  autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview!
+  autocmd BufWinEnter ?* silent! loadview
+augroup end
 
 " Open vimrc Config in a new tab and change the dir path
 " of that buffer to ~/.config/nvim

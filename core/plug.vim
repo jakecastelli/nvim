@@ -43,4 +43,6 @@ Plug 'ap/vim-css-color'
 Plug 'mhinz/vim-startify'
 " Show git symbol on the lines
 Plug 'mhinz/vim-signify'
+" Vim wiki
+Plug 'vimwiki/vimwiki'
 call plug#end()
