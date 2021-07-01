@@ -36,6 +36,7 @@ set termguicolors
 autocmd BufRead,BufNewFile *.md setlocal spell
 
 " Enable auto mkview and load view for fold
+" reference: https://www.youtube.com/watch?v=pnc9_d1k5-4&list=PLy7Kah3WzqrEjsuvhT46fr28Q11oa5ZoI&index=26&ab_channel=TheFrugalComputerGuy
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
