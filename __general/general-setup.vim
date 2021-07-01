@@ -35,6 +35,10 @@ set termguicolors
 " Enable spellcheck for markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell
 
+" Enable auto mkview and load view for fold
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
 " Open vimrc Config in a new tab and change the dir path
 " of that buffer to ~/.config/nvim
 command! Config execute "tabnew | lcd ~/.config/nvim | e $MYVIMRC"

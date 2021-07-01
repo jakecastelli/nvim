@@ -7,13 +7,16 @@ nmap <leader>h <C-w>h
 nmap <leader>l <C-w>l
 nmap <leader>j <C-w>j
 nmap <leader>k <C-w>k
+
 " show all the buffers
 nnoremap <leader>= :resize +5<CR>
 nnoremap <leader>- :resize -5<CR>
 nnoremap <leader>. :vertical resize +5<CR>
 nnoremap <leader>, :vertical resize -5<CR>
+
 " close the current window
 nnoremap <leader>Q :q<CR>
+
 " split screen
 nnoremap <leader>s :sp<CR>
 " vertical split screen
