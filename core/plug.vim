@@ -39,4 +39,8 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main'  }
 " Css Colour preview
 Plug 'ap/vim-css-color'
+" Vim Starter
+Plug 'mhinz/vim-startify'
+" Show git symbol on the lines
+Plug 'mhinz/vim-signify'
 call plug#end()

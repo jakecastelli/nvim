@@ -35,3 +35,7 @@ noremap <leader>w :w<CR>
 "
 " Escape to normal mode from insert mode
 imap jj <Esc>
+
+"Move tabs left/right
+noremap <A-Left>  :-tabmove<cr>
+noremap <A-Right> :+tabmove<cr>
