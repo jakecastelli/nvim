@@ -3,10 +3,10 @@
 nmap <leader>y :StripWhitespace<CR>
 
 " <leader> hljk For navigating between windows
-nmap <leader>h <C-w>h
-nmap <leader>l <C-w>l
-nmap <leader>j <C-w>j
-nmap <leader>k <C-w>k
+nnoremap <leader>h <C-w>h
+nnoremap <leader>l <C-w>l
+nnoremap <leader>j <C-w>j
+nnoremap <leader>k <C-w>k
 
 " show all the buffers
 nnoremap <leader>= :resize +5<CR>
@@ -23,22 +23,26 @@ nnoremap <leader>s :sp<CR>
 nnoremap <leader>vs :vs<CR>
 
 " New Tab
-nmap <leader>tt :tabnew<Space>
+nnoremap <leader>tt :tabnew<Space>
 " Next Tab
-noremap <leader>n :tabn<CR>
+nnoremap <leader>n :tabn<CR>
 " Previous Tab
-noremap <leader>p :tabp<CR>
+nnoremap <leader>p :tabp<CR>
 " Close current Tab
 " noremap <leader>c :tabc<CR>
 
 " Save
-noremap <leader>w :w<CR>
+nnoremap <leader>w :w<CR>
 " Open Terminal on the right split and put cursor into terminal
 " noremap <leader>tm :vs<CR> <bar> <C-w>l <bar> :term<CR> <bar> a
 "
 " Escape to normal mode from insert mode
-imap jj <Esc>
+inoremap jj <Esc>
 
 "Move tabs left/right
-noremap <A-Left>  :-tabmove<cr>
-noremap <A-Right> :+tabmove<cr>
+nnoremap <A-Left>  :-tabmove<cr>
+nnoremap <A-Right> :+tabmove<cr>
+
+"VSCode alike move lines
+nnoremap <A-Down> :m .+1<CR>==
+nnoremap <A-Up> :m .-2<CR>==

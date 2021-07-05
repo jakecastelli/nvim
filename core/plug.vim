@@ -7,8 +7,8 @@ Plug 'liuchengxu/vim-which-key'
 " Color Scheme
 Plug 'morhetz/gruvbox'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'cocopon/iceberg.vim'
-Plug 'herrbischoff/cobalt2.vim'
+" Plug 'cocopon/iceberg.vim'
+" Plug 'herrbischoff/cobalt2.vim'
 " Color Scheme
 " AirLine
 Plug 'vim-airline/vim-airline'
