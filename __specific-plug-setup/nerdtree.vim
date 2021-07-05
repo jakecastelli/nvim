@@ -1,8 +1,8 @@
 " === Nerdtree shorcuts === "
 "  <leader>n - Toggle NERDTree on/off
 "  <leader>f - Opens current file location in NERDTree
-nmap <Leader>b :NERDTreeToggle<CR>
-nmap <Leader>f :call NerdTreeOpenCurrentFileImprovement()<CR>
+nnoremap <Leader>b :NERDTreeToggle<CR>
+nnoremap <Leader>f :call NerdTreeOpenCurrentFileImprovement()<CR>
 
 function! NerdTreeOpenCurrentFileImprovement()
   if exists("g:NERDTree") && g:NERDTree.IsOpen()
