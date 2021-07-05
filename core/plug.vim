@@ -13,13 +13,16 @@ Plug 'herrbischoff/cobalt2.vim'
 " AirLine
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" File manager
 Plug 'preservim/nerdtree'
 " Fizzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 " CoC LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Auto pair
 Plug 'jiangmiao/auto-pairs'
+" Remove white space
 Plug 'ntpeters/vim-better-whitespace'
 " Deal with Comments
 Plug 'tpope/vim-commentary'
