@@ -1,10 +1,6 @@
 set bg=dark
 set updatetime=50
 
-" This can solve flicker issue which terminal opening in nvim - TODO: check if NVIM v0.5+ fixed it
-au TermEnter * setlocal scrolloff=0
-au TermLeave * setlocal scrolloff=10
-
 " Encoding
 set encoding=UTF-8
 
