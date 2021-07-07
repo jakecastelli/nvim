@@ -28,8 +28,15 @@ set ssop-=curdir
 "enable 24bit true colour
 set termguicolors
 
+" Enable mosule let's make our life easier
+set mouse=a
+
 " Enable spellcheck for markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell
+
+" stop inserting comments when press o
+autocmd BufRead,BufNewFile * set formatoptions-=o
+" ref: set formatoptions-=o
 
 " Enable auto mkview and load view for fold
 " reference: https://www.youtube.com/watch?v=pnc9_d1k5-4&list=PLy7Kah3WzqrEjsuvhT46fr28Q11oa5ZoI&index=26&ab_channel=TheFrugalComputerGuy

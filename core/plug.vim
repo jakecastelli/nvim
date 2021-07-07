@@ -48,4 +48,6 @@ Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-signify'
 " Vim wiki
 Plug 'vimwiki/vimwiki'
+" Smooth scrolling
+Plug 'yuttie/comfortable-motion.vim'
 call plug#end()
