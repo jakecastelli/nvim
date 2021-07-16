@@ -8,3 +8,4 @@ source ~/.config/nvim/__specific-plug-setup/comfortable-motion.vim
 source ~/.config/nvim/__specific-plug-setup/telescope_config.vim
 source ~/.config/nvim/__specific-plug-setup/git_messager_config.vim
 source ~/.config/nvim/__specific-plug-setup/lightline_config.vim
+source ~/.config/nvim/__specific-plug-setup/scroll_config.vim

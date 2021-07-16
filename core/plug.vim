@@ -57,7 +57,8 @@ Plug 'mhinz/vim-signify'
 " Vim wiki
 Plug 'vimwiki/vimwiki'
 " Smooth scrolling
-Plug 'yuttie/comfortable-motion.vim'
+" Plug 'yuttie/comfortable-motion.vim'
+Plug 'karb94/neoscroll.nvim'
 " Plug 'psliwka/vim-smoothie'
 " git message
 Plug 'rhysd/git-messenger.vim'
