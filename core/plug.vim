@@ -35,8 +35,6 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'tpope/vim-commentary'
 " Emmet
 Plug 'mattn/emmet-vim'
-" Make sure to grab nerd font, before using devicons
-" Plug 'ryanoasis/vim-devicons'
 " floating terminal
 Plug 'voldikss/vim-floaterm'
 " Multi-cursor
@@ -64,6 +62,7 @@ Plug 'karb94/neoscroll.nvim'
 Plug 'rhysd/git-messenger.vim'
 " vim fugitive
 Plug 'tpope/vim-fugitive'
+" Make sure to grab nerd font, before using devicons
 " icon
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
