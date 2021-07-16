@@ -11,13 +11,20 @@ Plug 'sonph/onehalf', {'rtp': 'vim/'}
 " Plug 'herrbischoff/cobalt2.vim'
 " Color Scheme
 " AirLine
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 " File manager
 Plug 'preservim/nerdtree'
+
 " Fizzy finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
+" Telscope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 " CoC LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Auto pair
@@ -35,11 +42,12 @@ Plug 'voldikss/vim-floaterm'
 " Multi-cursor
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " React JSX TSX
-Plug 'pangloss/vim-javascript'
-Plug 'leafgarland/typescript-vim'
+" Plug 'pangloss/vim-javascript'
+Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'leafgarland/typescript-vim'
 " Styled Component
-Plug 'styled-components/vim-styled-components', { 'branch': 'main'  }
+" Plug 'styled-components/vim-styled-components', { 'branch': 'main'  }
 " Css Colour preview
 Plug 'ap/vim-css-color'
 " Vim Starter
@@ -50,4 +58,12 @@ Plug 'mhinz/vim-signify'
 Plug 'vimwiki/vimwiki'
 " Smooth scrolling
 Plug 'yuttie/comfortable-motion.vim'
+" Plug 'psliwka/vim-smoothie'
+" git message
+Plug 'rhysd/git-messenger.vim'
+" vim fugitive
+Plug 'tpope/vim-fugitive'
+" icon
+Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()

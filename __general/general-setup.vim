@@ -1,5 +1,5 @@
 set bg=dark
-set updatetime=50
+set updatetime=300
 
 " Encoding
 set encoding=UTF-8
@@ -32,10 +32,12 @@ set termguicolors
 set mouse=a
 
 " Enable spellcheck for markdown files
-autocmd BufRead,BufNewFile *.md setlocal spell
+augroup vimrc_autocmd
+   autocmd BufRead,BufNewFile *.md setlocal spell
 
-" stop inserting comments when press o
-autocmd BufRead,BufNewFile * set formatoptions-=o
+  " stop inserting comments when press o
+  autocmd BufRead,BufNewFile * set formatoptions-=o
+augroup END
 " ref: set formatoptions-=o
 
 " Enable auto mkview and load view for fold
