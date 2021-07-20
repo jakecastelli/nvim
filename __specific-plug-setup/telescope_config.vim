@@ -4,7 +4,20 @@ nnoremap <leader>g <cmd>Telescope live_grep<cr>
 nnoremap <leader><Space> <cmd>Telescope buffers<cr>
 
 lua << EOF
+local actions = require('telescope.actions')
 require("telescope").setup {
+  defaults = {
+    mappings = {
+      i = {
+        -- send selected items to quickfix
+        ["<C-w>"] = actions.send_selected_to_qflist + actions.open_qflist,
+      },
+      n = {
+        -- send selected items to quickfix
+        ["<C-w>"] = actions.send_selected_to_qflist + actions.open_qflist,
+      },
+    },
+  },
   pickers = {
     -- Your special builtin config goes in here
     buffers = {
