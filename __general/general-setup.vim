@@ -65,7 +65,7 @@ command! Transparent execute 'hi Normal guibg=NONE ctermbg=NONE'
 " Random colourscheme selection everytime open vim
 function! RandomScheme()
   " let choices = ['gruvbox', 'onehalfdark', 'iceberg', 'cobalt2']
-  let choices = ['gruvbox', 'onehalfdark']
+  let choices = ['gruvbox', 'onehalfdark', 'bluewery']
   let index = RandomNumber(len(choices))
   execute 'colorscheme' choices[index]
 endfunction
