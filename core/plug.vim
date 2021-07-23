@@ -7,6 +7,8 @@ Plug 'liuchengxu/vim-which-key'
 " Color Scheme
 Plug 'morhetz/gruvbox'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'relastle/bluewery.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'cocopon/iceberg.vim'
 " Plug 'herrbischoff/cobalt2.vim'
 " Color Scheme
