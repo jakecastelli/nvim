@@ -26,7 +26,11 @@ set cursorline
 set ssop-=curdir
 "set backspace=indent,eol,start
 "enable 24bit true colour
-set termguicolors
+let s:term = system("echo $TERM_PROGRAM")[:-2]
+echo s:term
+if s:term != "Apple_Terminal"
+  set termguicolors
+endif
 
 " Enable mosule let's make our life easier
 set mouse=a
