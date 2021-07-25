@@ -9,7 +9,7 @@
 
 ```
 
-> Please download NeoVim 0.5+ first.
+> Please download NeoVim 0.5+ first. Also, recommend to use iterm2 if you are on a Mac.
 
 ## For NeoVim:
 1. Clone the repo under your `~/.config/` folder
