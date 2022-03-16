@@ -56,9 +56,16 @@ return packer.startup(function(use)
 
   use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
-  use 'nvim-telescope/telescope.nvim'
+
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
   use {'neoclide/coc.nvim', branch = 'release'}
   use 'jiangmiao/auto-pairs'
+
+  -- remove trailing space(s)
   use 'ntpeters/vim-better-whitespace'
   use 'voldikss/vim-floaterm'
   use {'mg979/vim-visual-multi', branch = 'master'}
@@ -69,6 +76,7 @@ return packer.startup(function(use)
   -- vim fugitive
   use 'tpope/vim-fugitive'
   -- Make sure to grab nerd font, before using devicons
+  --
   -- icon
   use 'ryanoasis/vim-devicons'
   use 'kyazdani42/nvim-web-devicons'
