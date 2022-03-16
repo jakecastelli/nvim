@@ -8,3 +8,4 @@ vim.cmd('source ~/.config/nvim/core/general.vim')
 vim.cmd('source ~/.config/nvim/core/plugconf.vim')
 
 require "user.options"
+require "user.plugins"
