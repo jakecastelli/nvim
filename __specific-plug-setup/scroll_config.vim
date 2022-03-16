@@ -12,8 +12,8 @@ local t = {}
 -- Syntax: t[keys] = {function, {function arguments}}
 -- Use the "sine" easing function
 -- https://github.com/karb94/neoscroll.nvim
-t['<C-u>'] = {'scroll', {'-vim.wo.scroll', 'true', '350', [['sine']]}}
-t['<C-d>'] = {'scroll', { 'vim.wo.scroll', 'true', '350', [['sine']]}}
+t['<C-u>'] = {'scroll', {'-vim.wo.scroll', 'true', '350', nil}}
+t['<C-d>'] = {'scroll', { 'vim.wo.scroll', 'true', '350', nil}}
 -- Pass "nil" to disable the easing animation (constant scrolling speed)
 require('neoscroll.config').set_mappings(t)
 EOF

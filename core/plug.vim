@@ -29,6 +29,8 @@ Plug 'nvim-telescope/telescope.nvim'
 
 " CoC LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Nvim LSP
+" Plug 'neovim/nvim-lspconfig'
 " Auto pair
 Plug 'jiangmiao/auto-pairs'
 " Remove white space
@@ -56,10 +58,12 @@ Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-signify'
 " Vim wiki
 Plug 'vimwiki/vimwiki'
+
 " Smooth scrolling
 " Plug 'yuttie/comfortable-motion.vim'
-Plug 'karb94/neoscroll.nvim'
 " Plug 'psliwka/vim-smoothie'
+Plug 'karb94/neoscroll.nvim'
+
 " git message
 Plug 'rhysd/git-messenger.vim'
 " vim fugitive
@@ -68,4 +72,10 @@ Plug 'tpope/vim-fugitive'
 " icon
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
+
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" snippets engine
+Plug 'SirVer/ultisnips'
 call plug#end()
