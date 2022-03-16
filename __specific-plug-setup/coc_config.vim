@@ -62,7 +62,7 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
-" augo suggestion
+" auto suggestion
 inoremap <silent><expr> <c-space> coc#refresh()
 
 " jumping to pre/next error
