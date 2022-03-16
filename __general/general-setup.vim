@@ -1,28 +1,3 @@
-set bg=dark
-set updatetime=300
-
-" Encoding
-set encoding=UTF-8
-
-" show line number and relative line number
-set nu
-set rnu
-
-" Whitespace
-set wrap
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set noshiftround
-
-set hidden
-
-" Cursor motion
-set scrolloff=8
-set matchpairs+=<:> " use % to jump between pairs
-set cursorline
-
 set ssop-=curdir
 "set backspace=indent,eol,start
 "enable 24bit true colour
@@ -31,9 +6,6 @@ echo s:term
 if s:term != "Apple_Terminal"
   set termguicolors
 endif
-
-" Enable mosule let's make our life easier
-set mouse=a
 
 " Enable spellcheck for markdown files
 augroup vimrc_autocmd
@@ -61,7 +33,7 @@ augroup END
 command! Config execute "tabnew | lcd ~/.config/nvim | e $MYVIMRC"
 
 " Reload vimrc
-command! Reload execute "source ~/.config/nvim/init.vim"
+command! Reload execute "source ~/.config/nvim/init.lua"
 
 " set background transparent
 command! Transparent execute 'hi Normal guibg=NONE ctermbg=NONE'
@@ -69,7 +41,8 @@ command! Transparent execute 'hi Normal guibg=NONE ctermbg=NONE'
 " Random colourscheme selection everytime open vim
 function! RandomScheme()
   " let choices = ['gruvbox', 'onehalfdark', 'iceberg', 'cobalt2']
-  let choices = ['gruvbox', 'onehalfdark', 'bluewery', 'dracula']
+  " let choices = ['gruvbox', 'onehalfdark', 'bluewery', 'dracula']
+  let choices = ['gruvbox', 'dracula']
   let index = RandomNumber(len(choices))
   execute 'colorscheme' choices[index]
 endfunction
