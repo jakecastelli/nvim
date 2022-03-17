@@ -4,7 +4,11 @@ vim.cmd('filetype off')
 require "user.options"
 require "user.plugins"
 require "user.treesitter"
+require "user.cmp"
+require "user.lsp"
 
 -- vim.cmd('source ~/.config/nvim/core/plug.vim')
+-- legacy general config
 vim.cmd('source ~/.config/nvim/core/general.vim')
+-- legacy plugin config
 vim.cmd('source ~/.config/nvim/core/plugconf.vim')

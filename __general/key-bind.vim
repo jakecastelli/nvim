@@ -18,7 +18,7 @@ nnoremap <leader>, :vertical resize -5<CR>
 nnoremap <leader>Q :q<CR>
 
 " split screen
-nnoremap <leader>s :sp<CR>
+" nnoremap <leader>s :sp<CR>
 " vertical split screen
 nnoremap <leader>vs :vs<CR>
 
@@ -33,6 +33,7 @@ nnoremap <leader>p :tabp<CR>
 
 " Save
 nnoremap <leader>w :w<CR>
+nnoremap <leader>s :Format<CR>
 " Open Terminal on the right split and put cursor into terminal
 " noremap <leader>tm :vs<CR> <bar> <C-w>l <bar> :term<CR> <bar> a
 "
@@ -46,3 +47,10 @@ nnoremap <A-Right> :+tabmove<cr>
 "VSCode alike move lines
 nnoremap <A-Down> :m .+1<CR>==
 nnoremap <A-Up> :m .-2<CR>==
+
+" Diagnostic
+nnoremap <leader>en :lua vim.diagnostic.goto_next()<CR>
+nnoremap <leader>ep :lua vim.diagnostic.goto_prev()<CR>
+" nnoremap <leader>ee :lua vim.diagnostic.enable()<CR>
+" nnoremap <leader>ed :lua vim.diagnostic.disable()<CR>
+
