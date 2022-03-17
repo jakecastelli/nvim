@@ -6,6 +6,7 @@ require "user.plugins"
 require "user.treesitter"
 require "user.cmp"
 require "user.lsp"
+require "user.impatient"
 
 -- vim.cmd('source ~/.config/nvim/core/plug.vim')
 -- legacy general config

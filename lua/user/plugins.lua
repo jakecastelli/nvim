@@ -60,6 +60,9 @@ return packer.startup(function(use)
   use 'itchyny/lightline.vim'
   use 'preservim/nerdtree'
 
+  -- Improve nvim start up time
+  use 'lewis6991/impatient.nvim'
+
   -- Deal with Comments
   use 'tpope/vim-commentary'
 
@@ -116,6 +119,9 @@ return packer.startup(function(use)
   -- snippets
   use 'L3MON4D3/LuaSnip' --snippet engine
   use 'rafamadriz/friendly-snippets' -- a bunch of snippets to use
+
+  -- Github copilot
+  use 'github/copilot.vim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
