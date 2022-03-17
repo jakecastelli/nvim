@@ -9,11 +9,12 @@
 
 ```
 
-> Please download NeoVim 0.5+ first. Also, recommend to use iterm2 if you are on a Mac.
+> Requirement:
+>  - NeoVim 0.6+
+>  - Node >= v.12.0
 
-## For NeoVim:
 1. Clone the repo under your `~/.config/` folder
-2. open neovim and then type `:PlugInstall`
+2. open nvim and then wait plugins to be installed
 
 <hr>
 Feel free to ask me anything about my setup.
