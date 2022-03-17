@@ -44,16 +44,16 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
 
   -- Which key
-   use {
-     "folke/which-key.nvim",
-     config = function()
-       require("which-key").setup {
-	-- your configuration comes here
-	-- or leave it empty to use the default settings
-	-- refer to the configuration section below
-      }
-    end
-  }
+   -- use {
+   --   "folke/which-key.nvim",
+   --   config = function()
+   --     require("which-key").setup {
+	-- -- your configuration comes here
+	-- -- or leave it empty to use the default settings
+	-- -- refer to the configuration section below
+   --    }
+   --  end
+  -- }
   -- Color Scheme
   use 'morhetz/gruvbox'
   use 'Mofiqul/dracula.nvim'
@@ -80,6 +80,11 @@ return packer.startup(function(use)
   use {'mg979/vim-visual-multi', branch = 'master'}
   use 'mhinz/vim-signify'
   use 'karb94/neoscroll.nvim'
+
+  -- use 'yuezk/vim-js'
+  -- use 'maxmellon/vim-jsx-pretty'
+  -- use 'leafgarland/typescript-vim'
+
   -- git message
   use 'rhysd/git-messenger.vim'
   -- vim fugitive
