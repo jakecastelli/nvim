@@ -26,6 +26,11 @@ keymap('n', '<leader>l', '<C-w>l', opts)
 keymap('n', '<S-l>', ':bnext<CR>', opts)
 keymap('n', '<S-h>', ':bprevious<CR>', opts)
 
+-- Tabs
+keymap('n', '<leader>tt', ':tabnew<CR>', opts)
+keymap('n', '<leader>n', ':tabnext<CR>', opts)
+keymap('n', '<leader>p', ':tabp<CR>', opts)
+
 -- Automatically remove trailing whitespace
 keymap('n', '<leader>y', ':StripWhitespace<CR>', opts)
 
