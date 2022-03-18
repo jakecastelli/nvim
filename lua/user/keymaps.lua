@@ -27,7 +27,6 @@ keymap('n', '<S-l>', ':bnext<CR>', opts)
 keymap('n', '<S-h>', ':bprevious<CR>', opts)
 
 -- Tabs
-keymap('n', '<leader>tt', ':tabnew<CR>', opts)
 keymap('n', '<leader>n', ':tabnext<CR>', opts)
 keymap('n', '<leader>p', ':tabp<CR>', opts)
 
@@ -65,3 +64,4 @@ keymap('n', '<A-Right>', ':+tabmove<cr>', opts)
 
 -- translation
 keymap('n', '<leader>t', ':TranslateW<cr>', opts)
+keymap('v', '<leader>t', ':TranslateW<cr>', opts)
