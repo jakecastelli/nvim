@@ -2,6 +2,7 @@ local options = {
   background = 'dark',
   backup = false,
   completeopt = { 'menuone', 'noselect' }, -- mostly just for cmp
+  cursorline = true,
   encoding = 'utf-8',
   hidden = true,
   mouse = 'a',
