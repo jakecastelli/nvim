@@ -57,3 +57,6 @@ keymap('x', '<A-k>', ":move '<-2<CR>gv-gv", opts)
 -- Move tabs left/right
 keymap('n', '<A-left>', ':-tabmove<cr>', opts)
 keymap('n', '<A-Right>', ':+tabmove<cr>', opts)
+
+-- translation
+keymap('n', '<leader>t', ':TranslateW<cr>', opts)

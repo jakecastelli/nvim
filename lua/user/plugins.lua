@@ -125,6 +125,9 @@ return packer.startup(function(use)
   -- Github copilot
   use { 'github/copilot.vim', commit = '47eb231463d3654de1a205c4e30567fbd006965d' }
 
+  -- Quick translator
+  use { 'voldikss/vim-translator', commit = '9e3080193409c385d29adb156e9ab15af125ede0' }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
