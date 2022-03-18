@@ -2,6 +2,7 @@ vim.cmd 'set nocompatible'
 vim.cmd 'filetype off'
 
 require 'user.options'
+require 'user.keymaps'
 require 'user.plugins'
 require 'user.treesitter'
 require 'user.cmp'
