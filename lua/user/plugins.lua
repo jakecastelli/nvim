@@ -41,7 +41,7 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  use 'wbthomason/packer.nvim' -- Have packer manage itself
+  use { 'wbthomason/packer.nvim', commit = 'c576ab3f1488ee86d60fd340d01ade08dcabd256' } -- Have packer manage itself
 
   -- Which key
   -- use {
@@ -55,73 +55,75 @@ return packer.startup(function(use)
   --  end
   -- }
   -- Color Scheme
-  use 'morhetz/gruvbox'
-  use 'Mofiqul/dracula.nvim'
-  use 'itchyny/lightline.vim'
-  use 'preservim/nerdtree'
+  use { 'morhetz/gruvbox', commit = 'bf2885a95efdad7bd5e4794dd0213917770d79b7' }
+  use { 'Mofiqul/dracula.nvim', commit = 'a219971291c56bcca3827cb7bd40aaaef23feeca' }
+  use { 'itchyny/lightline.vim', commit = '11931e2de42cb1a14887a002a874f0b2daf12bc2' }
+  use { 'preservim/nerdtree', commit = 'eed488b1cd1867bd25f19f90e10440c5cc7d6424' }
 
   -- Improve nvim start up time
-  use 'lewis6991/impatient.nvim'
+  use { 'lewis6991/impatient.nvim', commit = '7abfc924714d3b7f19f3674cca0231cf6ef2050f' }
 
   -- Deal with Comments
-  use 'tpope/vim-commentary'
+  use { 'tpope/vim-commentary', commit = '627308e30639be3e2d5402808ce18690557e8292' }
 
-  use 'nvim-lua/popup.nvim'
-  use 'nvim-lua/plenary.nvim'
+  use { 'nvim-lua/popup.nvim', commit = 'b7404d35d5d3548a82149238289fa71f7f6de4ac' }
+  use { 'nvim-lua/plenary.nvim', commit = '14dfb4071022b22e08384ee125a5607464b6d397' }
 
   use {
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } },
+    commit = 'a36a813d5d031e6f5d52b74986915e68130febd9',
   }
 
-  use 'jiangmiao/auto-pairs'
+  use { 'windwp/nvim-autopairs', commit = '6617498bea01c9c628406d7e23030da57f2f8718' }
 
   -- remove trailing space(s)
-  use 'ntpeters/vim-better-whitespace'
-  use 'voldikss/vim-floaterm'
-  use { 'mg979/vim-visual-multi', branch = 'master' }
-  use 'mhinz/vim-signify'
-  use 'karb94/neoscroll.nvim'
+  use { 'ntpeters/vim-better-whitespace', commit = 'c5afbe91d29c5e3be81d5125ddcdc276fd1f1322' }
+  use { 'voldikss/vim-floaterm', commit = '6244d1739aad6682c6c1d5db18c846c342af6e3e' }
+  use { 'mg979/vim-visual-multi', branch = 'master', commit = 'e20908963d9b0114e5da1eacbc516e4b09cf5803' }
+  use { 'mhinz/vim-signify', commit = '69498f6d49f3eeac06870012416dd9bf867b84f3' }
+  use { 'karb94/neoscroll.nvim', commit = '07242b9c29eed0367cb305d41851b2e04de9052e' }
 
   -- use 'yuezk/vim-js'
   -- use 'maxmellon/vim-jsx-pretty'
   -- use 'leafgarland/typescript-vim'
 
   -- git message
-  use 'rhysd/git-messenger.vim'
+  use { 'rhysd/git-messenger.vim', commit = '2e67899355f3f631aad6845925e4c2c13546444d' }
   -- vim fugitive
-  use 'tpope/vim-fugitive'
+  use { 'tpope/vim-fugitive', commit = '46652a304f0b89f36d70cee954d77e467ec0f6de' }
   -- Make sure to grab nerd font, before using devicons
   --
   -- icon
-  use 'ryanoasis/vim-devicons'
-  use 'kyazdani42/nvim-web-devicons'
+  use { 'ryanoasis/vim-devicons', commit = 'a2258658661e42dd4cdba4958805dbad1fe29ef4' }
+  use { 'kyazdani42/nvim-web-devicons', commit = '4415d1aaa56f73b9c05795af84d625c610b05d3b' }
 
   -- cmp plugins
-  use 'hrsh7th/nvim-cmp' -- The completion plugin
-  use 'hrsh7th/cmp-buffer' -- buffer completions
-  use 'hrsh7th/cmp-path' -- path completions
-  use 'hrsh7th/cmp-cmdline' -- cmdline completions
-  use 'saadparwaiz1/cmp_luasnip' -- snippet completions
-  use 'hrsh7th/cmp-nvim-lsp'
+  use { 'hrsh7th/nvim-cmp', commit = '71d7f46b930bf08e982925c77bd9b0a9808c1162' } -- The completion plugin
+  use { 'hrsh7th/cmp-buffer', commit = 'd66c4c2d376e5be99db68d2362cd94d250987525' } -- buffer completions
+  use { 'hrsh7th/cmp-path', commit = '466b6b8270f7ba89abd59f402c73f63c7331ff6e' } -- path completions
+  use { 'hrsh7th/cmp-cmdline', commit = 'f4beb74e8e036f9532bedbcac0b93c7a55a0f8b0' } -- cmdline completions
+  use { 'saadparwaiz1/cmp_luasnip', commit = 'd6f837f4e8fe48eeae288e638691b91b97d1737f' } -- snippet completions
+  use { 'hrsh7th/cmp-nvim-lsp', commit = 'ebdfc204afb87f15ce3d3d3f5df0b8181443b5ba' }
 
   -- LSP
-  use 'neovim/nvim-lspconfig' -- enable LSP
-  use 'williamboman/nvim-lsp-installer' -- simple to use language server installer
-  use 'jose-elias-alvarez/null-ls.nvim' -- for formatters and linters
+  use { 'neovim/nvim-lspconfig', commit = '710deb04d9f8b73517e1d995a57a1505cbbaac51' } -- enable LSP
+  use { 'williamboman/nvim-lsp-installer', commit = 'dc783087bef65cc7c2943d8641ff1b6dfff6e5a9' } -- simple to use language server installer
+  use { 'jose-elias-alvarez/null-ls.nvim', commit = '041601cb03daa8982c5af6edc6641f4b97e9d6b5' } -- for formatters and linters
 
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
+    commit = 'fd92e70c69330dd8f2f6753d3d987c34e7dacd24',
   }
 
   -- snippets
-  use 'L3MON4D3/LuaSnip' --snippet engine
-  use 'rafamadriz/friendly-snippets' -- a bunch of snippets to use
+  use { 'L3MON4D3/LuaSnip', commit = '0d33649415c069af7486b36709bcbebc47fc4f71' } --snippet engine
+  use { 'rafamadriz/friendly-snippets', commit = 'ad07b2844021b20797adda5b483265802559a693' } -- a bunch of snippets to use
 
   -- Github copilot
-  use 'github/copilot.vim'
+  use { 'github/copilot.vim', commit = '47eb231463d3654de1a205c4e30567fbd006965d' }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
