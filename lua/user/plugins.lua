@@ -57,7 +57,15 @@ return packer.startup(function(use)
   -- Color Scheme
   use { 'morhetz/gruvbox', commit = 'bf2885a95efdad7bd5e4794dd0213917770d79b7' }
   use { 'Mofiqul/dracula.nvim', commit = 'a219971291c56bcca3827cb7bd40aaaef23feeca' }
-  use { 'itchyny/lightline.vim', commit = '11931e2de42cb1a14887a002a874f0b2daf12bc2' }
+
+  -- Status line
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+    commit = '7db1db3cd97079cf9c0089bc04afe71e90256a23',
+  }
+
+  -- Nerd tree
   use { 'preservim/nerdtree', commit = 'eed488b1cd1867bd25f19f90e10440c5cc7d6424' }
 
   -- Improve nvim start up time
