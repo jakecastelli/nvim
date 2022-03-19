@@ -72,11 +72,17 @@ return packer.startup(function(use)
   use { 'lewis6991/impatient.nvim', commit = '7abfc924714d3b7f19f3674cca0231cf6ef2050f' }
 
   -- Deal with Comments
-  use { 'tpope/vim-commentary', commit = '627308e30639be3e2d5402808ce18690557e8292' }
+  use { 'numToStr/Comment.nvim', commit = 'a841f73523440c4f32d39f0290cf1e691311db2a' }
+  use {
+    'JoosepAlviste/nvim-ts-context-commentstring',
+    commit = '7810f1fe706092290dd338f40e5e857bac4a03cf',
+  }
 
+  -- Essential for other plugins to work
   use { 'nvim-lua/popup.nvim', commit = 'b7404d35d5d3548a82149238289fa71f7f6de4ac' }
   use { 'nvim-lua/plenary.nvim', commit = '14dfb4071022b22e08384ee125a5607464b6d397' }
 
+  -- Telescope for file search and some other good stuff
   use {
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } },

@@ -10,6 +10,7 @@ require 'user.cmp'
 require 'user.lsp'
 require 'user.impatient'
 require 'user.scroll'
+require 'user.comment'
 
 vim.cmd 'source ~/.config/nvim/core/rgconfig.vim'
 -- legacy plugin configs
