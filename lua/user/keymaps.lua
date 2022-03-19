@@ -46,6 +46,8 @@ keymap('n', '<leader>p', ':tabp<CR>', opts)
 
 -- Save
 keymap('n', '<leader>w', ':w<CR>', opts)
+-- Quit
+keymap('n', '<leader><S>q', ':q<CR>', opts)
 
 -- Resize window
 keymap('n', '<leader>=', ':resize +5<CR>', opts)
