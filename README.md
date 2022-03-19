@@ -1,6 +1,7 @@
 > **Requirements**:
 >  - NeoVim 0.6+
 >  - Node >= v.12.0
+>  - ripgrep (fuzzy search)
 >  - stylua (for formatting lua file)
 >  - prettier (for formatting javascript / typescript file)
 
