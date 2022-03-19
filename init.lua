@@ -10,8 +10,6 @@ require 'user.lsp'
 require 'user.impatient'
 require 'user.scroll'
 
--- vim.cmd('source ~/.config/nvim/core/plug.vim')
--- legacy general config
-vim.cmd 'source ~/.config/nvim/core/general.vim'
--- legacy plugin config
+vim.cmd 'source ~/.config/nvim/core/rgconfig.vim'
+-- legacy plugin configs
 vim.cmd 'source ~/.config/nvim/core/plugconf.vim'
