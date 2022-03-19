@@ -26,3 +26,10 @@ end
 
 -- use % to jump between pairs
 vim.cmd 'set matchpairs+=<:>'
+
+-- Quickly open config by typing Config
+vim.api.nvim_command 'command! Config execute "tabnew | lcd ~/.config/nvim | e $MYVIMRC"'
+-- Quickly reload config by typing Reload
+vim.api.nvim_command 'command! Reload execute "source ~/.config/nvim/init.lua"'
+-- Transparent background
+vim.api.nvim_command 'command! Transparent execute "hi Normal guibg=NONE ctermbg=NONE"'
