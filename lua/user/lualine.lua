@@ -29,6 +29,7 @@ local mode = {
   fmt = function(str)
     return '-- ' .. str .. ' --'
   end,
+  padding = 1,
 }
 
 local filetype = {
@@ -41,11 +42,12 @@ local branch = {
   'branch',
   icons_enabled = true,
   icon = '',
+  padding = { left = 2 },
 }
 
 local location = {
   'location',
-  padding = 0,
+  padding = 1,
 }
 
 -- cool function for progress
