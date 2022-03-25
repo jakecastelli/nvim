@@ -59,10 +59,10 @@ keymap('n', '<leader>,', ':vertical resize -5<CR>', opts)
 -- Key maps for using plugins
 -----------------------------
 
--- Telescope
+-- Format
 keymap('n', '<C-s>', ':Format<CR>', opts)
 
--- Format
+-- Telescope
 keymap('n', '<C-p>', ':Telescope find_files<cr>', opts)
 keymap('n', '<C-_>', ':Telescope current_buffer_fuzzy_find<cr>', opts)
 keymap('n', '<leader>g', ':Telescope live_grep<cr>', opts)
