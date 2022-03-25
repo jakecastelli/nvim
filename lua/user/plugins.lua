@@ -142,6 +142,9 @@ return packer.startup(function(use)
   -- Quick translator
   use { 'voldikss/vim-translator', commit = '9e3080193409c385d29adb156e9ab15af125ede0' }
 
+  -- Lsp progress
+  use { 'j-hui/fidget.nvim', commit = 'd47f2bbf7d984f69dc53bf2d37f9292e3e99ae8a' }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
