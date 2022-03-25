@@ -60,7 +60,7 @@ keymap('n', '<leader>,', ':vertical resize -5<CR>', opts)
 -----------------------------
 
 -- Format
-keymap('n', '<C-s>', ':Format<CR>', opts)
+keymap('n', '<leader>s', ':Format<CR>', opts)
 
 -- Telescope
 keymap('n', '<C-p>', ':Telescope find_files<cr>', opts)
