@@ -4,6 +4,7 @@
 >  - ripgrep (fuzzy search)
 >  - stylua (for formatting lua file)
 >  - prettier (for formatting javascript / typescript file)
+>  - the sliver search
 
 1. Clone the repo under your `~/.config/` folder
 2. Open nvim and then wait plugins to be installed
