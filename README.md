@@ -1,5 +1,5 @@
 > **Requirements**:
->  - NeoVim 0.6+
+>  - NeoVim 0.6+ (the config is best with neovim v0.6.1)
 >  - Node >= v.12.0
 >  - ripgrep (fuzzy search)
 >  - stylua (for formatting lua file)
