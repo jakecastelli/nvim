@@ -1,5 +1,4 @@
 local opts = { noremap = true, silent = true }
-
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
@@ -78,3 +77,7 @@ keymap('n', '<leader>ep', ':lua vim.diagnostic.goto_prev()<CR>', opts)
 -- translation
 keymap('n', '<leader>t', ':TranslateW<cr>', opts)
 keymap('v', '<leader>t', ':TranslateW<cr>', opts)
+
+-- Copy to system clipboard
+keymap('n', '<leader>c', '"*y', opts)
+keymap('v', '<leader>c', '"*y', opts)
