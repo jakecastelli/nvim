@@ -10,6 +10,7 @@ local options = {
   relativenumber = true,
   scrolloff = 8, -- always keep 8 lines to the bottom
   shiftwidth = 2, -- the number of spaces inserted for each indentation
+  showmode = false,
   signcolumn = 'yes', -- always show the sign column, otherwise it would shift the text each time
   smartcase = true, -- smart case
   smartindent = true, -- make indenting smarter again
