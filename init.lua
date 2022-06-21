@@ -8,10 +8,13 @@ require 'user.lualine'
 require 'user.autopairs'
 require 'user.cmp'
 require 'user.lsp'
+require 'user.dap'
 require 'user.impatient'
 require 'user.scroll'
 require 'user.comment'
 require 'user.fidget'
+require 'user.alpha'
+require 'user.project'
 
 vim.cmd 'source ~/.config/nvim/core/rgconfig.vim'
 -- legacy plugin configs
