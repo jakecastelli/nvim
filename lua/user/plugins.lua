@@ -86,8 +86,10 @@ return packer.startup(function(use)
   use {
     'nvim-telescope/telescope.nvim',
     requires = { { 'nvim-lua/plenary.nvim' } },
-    commit = 'a36a813d5d031e6f5d52b74986915e68130febd9',
+    commit = 'd96eaa914aab6cfc4adccb34af421bdd496468b0',
   }
+
+  use { 'ahmedkhalf/project.nvim', commit = '541115e762764bc44d7d3bf501b6e367842d3d4f' }
 
   use { 'windwp/nvim-autopairs', commit = '6617498bea01c9c628406d7e23030da57f2f8718' }
 
@@ -122,7 +124,7 @@ return packer.startup(function(use)
 
   -- LSP
   use { 'neovim/nvim-lspconfig', commit = '710deb04d9f8b73517e1d995a57a1505cbbaac51' } -- enable LSP
-  use { 'williamboman/nvim-lsp-installer', commit = 'dc783087bef65cc7c2943d8641ff1b6dfff6e5a9' } -- simple to use language server installer
+  use { 'williamboman/nvim-lsp-installer', commit = 'e9f13d7acaa60aff91c58b923002228668c8c9e6' } -- simple to use language server installer
   use { 'jose-elias-alvarez/null-ls.nvim', commit = '041601cb03daa8982c5af6edc6641f4b97e9d6b5' } -- for formatters and linters
 
   -- Treesitter
@@ -144,6 +146,19 @@ return packer.startup(function(use)
 
   -- Lsp progress
   use { 'j-hui/fidget.nvim', commit = 'd47f2bbf7d984f69dc53bf2d37f9292e3e99ae8a' }
+
+  -- Alpha
+  use {
+    'goolord/alpha-nvim',
+    config = function()
+      require('alpha').setup(require('alpha.themes.dashboard').config)
+    end,
+  }
+
+  -- DAP
+  use { 'mfussenegger/nvim-dap', commit = '014ebd53612cfd42ac8c131e6cec7c194572f21d' }
+  use { 'rcarriga/nvim-dap-ui', commit = 'd76d6594374fb54abf2d94d6a320f3fd6e9bb2f7' }
+  use { 'ravenxrz/DAPInstall.nvim', commit = '8798b4c36d33723e7bba6ed6e2c202f84bb300de' }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
