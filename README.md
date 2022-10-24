@@ -1,6 +1,6 @@
 > **Requirements**:
->  - NeoVim 0.6+ (the config is best with neovim v0.6.1)
->  - Node >= v.12.0
+>  - NeoVim 0.7+ (the config is best with neovim v0.7.x)
+>  - Node >= v.14.0
 >  - ripgrep (fuzzy search)
 >  - stylua (for formatting lua file)
 >  - prettier (for formatting javascript / typescript file)
@@ -12,4 +12,3 @@
 
 <hr>
 Feel free to ask me anything about my setup.
-
