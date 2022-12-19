@@ -79,8 +79,14 @@ return packer.startup(function(use)
   }
 
   -- Essential for other plugins to work
-  use { 'nvim-lua/popup.nvim', commit = 'b7404d35d5d3548a82149238289fa71f7f6de4ac' }
-  use { 'nvim-lua/plenary.nvim', commit = '14dfb4071022b22e08384ee125a5607464b6d397' }
+  use {
+    'nvim-lua/popup.nvim',
+    commit = 'b7404d35d5d3548a82149238289fa71f7f6de4ac',
+  }
+  use {
+    'nvim-lua/plenary.nvim',
+    commit = '14dfb4071022b22e08384ee125a5607464b6d397',
+  }
 
   -- Telescope for file search and some other good stuff
   use {
